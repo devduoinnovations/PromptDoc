@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptdoc-ai"
+version = "1.0.0"
+description = "Context-packaging utility for software engineers and web-based LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pyperclip>=1.8.2",
+]
+
+[project.scripts]
+promptdoc = "promptdoc:app"
+
+[tool.setuptools]
+py-modules = ["promptdoc"]

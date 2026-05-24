@@ -1,0 +1,7 @@
+# PromptDoc AI Ignores
+.pytest_cache/
+*.egg-info/
+.promptdoc.md
+.pytest_cache
+*.pyc
+__pycache__/
